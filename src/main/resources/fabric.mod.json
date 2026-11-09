@@ -1,0 +1,28 @@
+{
+	"schemaVersion": 1,
+	"id": "vanillax",
+	"version": "${version}",
+	"name": "VanillaX",
+	"description": "Client-side visual settings for shields, fire and totems.",
+	"authors": [
+		"VanillaX"
+	],
+	"license": "CC0-1.0",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.vanillax.VanillaXClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "vanillax.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25"
+	}
+}
