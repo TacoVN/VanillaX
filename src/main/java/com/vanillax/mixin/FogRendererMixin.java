@@ -47,17 +47,19 @@ public class FogRendererMixin {
 		}
 
 		FogType fluid = camera.getFluidInCamera();
-		boolean removesFluidFog = fluid == FogType.WATER || fluid == FogType.LAVA;
-		boolean removesAtmosphericFog = level.dimension() == Level.NETHER || level.dimension() == Level.END;
-		if (!removesFluidFog && !removesAtmosphericFog) {
-			return;
-		}
-
-		// Powder snow keeps its fog, and blindness/darkness replace the water or atmospheric fog in
-		// vanilla; only the environment fog of this feature is removed.
 		if (fluid == FogType.POWDER_SNOW) {
 			return;
 		}
+
+		boolean fluidFog = fluid == FogType.WATER || fluid == FogType.LAVA;
+		boolean atmosphericFog = fluid == FogType.NONE
+			&& (level.dimension() == Level.NETHER || level.dimension() == Level.END);
+		if (!fluidFog && !atmosphericFog) {
+			return;
+		}
+
+		// Blindness and darkness replace the water or atmospheric fog in vanilla; lava fog takes
+		// priority over the effects and is still removed.
 		if (fluid != FogType.LAVA) {
 			Entity entity = camera.entity();
 			if (entity instanceof LivingEntity livingEntity
@@ -66,11 +68,13 @@ public class FogRendererMixin {
 			}
 		}
 
+		// Only the environmental fog is cleared: the render-distance (terrain) fog stays vanilla in
+		// every dimension.
 		fogData.environmentalStart = NO_FOG_DISTANCE;
 		fogData.environmentalEnd = NO_FOG_DISTANCE;
-		fogData.renderDistanceStart = NO_FOG_DISTANCE;
-		fogData.renderDistanceEnd = NO_FOG_DISTANCE;
-		fogData.skyEnd = NO_FOG_DISTANCE;
-		fogData.cloudEnd = NO_FOG_DISTANCE;
+		if (atmosphericFog) {
+			fogData.skyEnd = NO_FOG_DISTANCE;
+			fogData.cloudEnd = NO_FOG_DISTANCE;
+		}
 	}
 }
