@@ -11,6 +11,7 @@ The settings are grouped into **General**, **Shield & Fire**, **Totem**, **Overl
 | Setting | Range | Default | Description |
 | --- | --- | --- | --- |
 | Permanent Sprint | On/Off | On | On makes the player sprint whenever they move forward, independent of whether Sprint is set to Toggle or Hold |
+| Fog | On/Off | Off | Off removes the fog while underwater or inside lava, and the atmospheric fog of the Nether and the End; On restores vanilla. Powder snow and the blindness/darkness fog are never touched |
 | Eating Particles | On/Off | Off | On keeps the vanilla particles while eating or drinking; Off removes them |
 | Explosion Particles | On/Off | Off | On keeps the vanilla particles from TNT, crystals, and other explosions; Off removes them |
 | Clean Hitboxes | On/Off | On | On strips the red eye line and blue view arrow from entity hitboxes, leaving only the white box |

@@ -52,6 +52,7 @@ public class VanillaXSettingsScreen extends OptionsSubScreen {
 		this.addToggleSection(
 			"General",
 			createToggle("Permanent Sprint", config.permanentSprint, value -> config.permanentSprint = value, config),
+			createToggle("Fog", config.fog, value -> config.fog = value, config),
 			createToggle("Eating Particles", config.eatingParticles, value -> config.eatingParticles = value, config),
 			createToggle("Explosion Particles", config.explosionParticles, value -> config.explosionParticles = value, config),
 			createToggle("Clean Hitboxes", config.cleanHitboxes, value -> config.cleanHitboxes = value, config)

@@ -26,6 +26,7 @@ public final class VanillaXConfig {
 	public int pumpkinOpacity = 70;
 	public int spyglassOpacity = 70;
 	public boolean permanentSprint = true;
+	public boolean fog = false;
 	public boolean eatingParticles = false;
 	public boolean explosionParticles = false;
 	public boolean cleanHitboxes = true;

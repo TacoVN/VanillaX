@@ -7,6 +7,7 @@
 		"CreditsAndAttributionScreenMixin",
 		"EntityHitboxDebugRendererMixin",
 		"FirstPersonHandsAndItemsRendererMixin",
+		"FogRendererMixin",
 		"GammaMixin",
 		"HudMixin",
 		"LivingEntityMixin",
