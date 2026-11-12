@@ -8,6 +8,7 @@
 		"TacoVN"
 	],
 	"license": "All Rights Reserved",
+	"icon": "assets/vanillax/icon.png",
 	"environment": "client",
 	"entrypoints": {
 		"client": [
