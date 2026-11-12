@@ -3,7 +3,7 @@
 	"id": "vanillax",
 	"version": "${version}",
 	"name": "VanillaX",
-	"description": "Client-side visual settings for shields, fire and totems.",
+	"description": "A simple client-side mod designed to enhance your Vanilla Minecraft experience.",
 	"authors": [
 		"VanillaX"
 	],

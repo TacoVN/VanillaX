@@ -1,10 +1,23 @@
 # VanillaX
 
-A client-side Fabric mod for Minecraft 26.3 that adds fine-grained visual settings for shields, fire, totems, screen overlays and hitboxes.
+VanillaX is a simple client-side mod designed to enhance your Vanilla Minecraft experience. Its features are based on my in-depth research into Minecraft for years
 
 ## Features
 
-Open **Options -> Credits & Attribution -> VanillaX** to access the settings screen.
+- **Gamma 5.0:** Configure brightness using gamma 5.0 **(patched in 1.19+)**
+- **Permanent Sprint:** Always sprint, regardless of Hold/Toggle mode
+- **Fog:** Remove some fog effects (water, lava,...)
+- **Rendering:** Configure shield, fire, totem rendering, **and more!**
+- **Bug Fixes:** Fix some Vanilla Minecraft "features"
+- **Easter Egg:** An old hidden Vanilla Minecraft feature **(patched in 1.18)**, can you spot it?
+
+## Configuration
+
+VanillaX can be configured in-game via **Options** ➡ **Credits & Attribution** ➡ **VanillaX**
+
+Works best with [Sodium](https://modrinth.com/mod/sodium)
+
+## Settings Reference
 
 The settings are grouped into **General**, **Shield & Fire**, **Totem**, **Overlay**, and **Others** sections with bold, underlined headers, matching the style of the vanilla Key Binds screen.
 
@@ -44,6 +57,12 @@ toggle - see `GammaValueSet` and `GammaMixin`.
 | Preferences | - | The whole section: Autosave Indicator, Show Vignette, Attack Indicator, Chunk Fade |
 
 For **Clean Hitboxes**, **On** keeps only the white hitbox outline (the vanilla red eye line and blue view arrow are hidden), and **Off** restores the full vanilla debug overlay. For the particle toggles, **On** restores the vanilla particles and **Off** removes them. **Crosshair Fix**, **Wither Fix**, and **Easter Egg** are **On** when the fix is active and **Off** for vanilla behaviour. All sliders use **0 to 100**; defaults are listed in the table, and **100** is vanilla for every slider. For the height sliders, lowering the value moves the element down at a constant speed, and **0** is just enough to move it off-screen. For the size sliders, **100** is the vanilla size and **0** is the smallest. For the opacity sliders, lowering the value fades the element at a constant rate, and **0** makes it fully transparent. Settings are stored in `config/vanillax.json` and applied immediately when a widget is changed.
+
+## Others
+
+Share your ideas, bug reports,... on my [Discord](https://discord.gg/n8WfxjEacE) server
+
+Feel free to use this mod in your modpacks or Youtube/Tiktok videos without asking for permission. **Do not redistribute anywhere else!**
 
 ## Requirements
 
