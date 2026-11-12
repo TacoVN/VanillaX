@@ -89,4 +89,6 @@ The built mod is written to `build/libs/vanillax-1.0.0.jar`.
 
 ## License
 
-This project is available under the CC0-1.0 license.
+All rights reserved. See [LICENSE](LICENSE).
+
+The mod may be used in Minecraft modpacks and featured in videos, but it may not be redistributed, reuploaded, modified, or reused without permission.
