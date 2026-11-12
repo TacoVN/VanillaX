@@ -31,6 +31,7 @@ java {
 jar {
 	def projectName = project.name
 	inputs.property "projectName", projectName
+	from("README.md")
 	from("LICENSE") {
 		rename { "${it}_$projectName" }
 	}
